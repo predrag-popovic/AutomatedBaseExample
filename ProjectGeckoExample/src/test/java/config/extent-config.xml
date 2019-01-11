@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<extentreports>
+
+    <configuration>
+        <!-- report theme --> <!-- standard, dark -->
+        <theme>standard</theme>
+
+        <!-- document encoding -->  <!-- defaults to UTF-8 -->
+        <encoding>UTF-8</encoding>
+
+        <!-- protocol for script and stylesheets -->   <!-- defaults to https -->
+        <protocol>https</protocol>
+
+        <!-- title of the document -->
+        <documentTitle>Gecko Solution - Cucumber Framework</documentTitle>
+
+        <!-- report name - displayed at top-nav -->
+        <reportName>Gecko Solution - Cucumber Report</reportName>
+
+        <!-- global date format override -->  <!-- defaults to yyyy-MM-dd -->
+        <dateFormat>yyyy-MM-dd</dateFormat>
+
+        <!-- global time format override -->   <!-- defaults to HH:mm:ss -->
+        <timeFormat>HH:mm:ss</timeFormat>
+
+        <!-- custom javascript -->
+        <scripts>
+
+            <![CDATA[
+
+        $(document).ready(function() {
+            document.querySelectorAll('li.waves-effect')[1].style.display = "none";
+            document.querySelectorAll('h5.test-name')[0].style.display = "none";
+        });
+
+           ]]>
+
+        </scripts>
+
+        <!-- custom styles -->
+        <styles>
+
+            <![CDATA[
+
+            body {font-size:15px !important;}
+
+            #charts-row .card-panel {height: 185px;}
+
+            .report-name {background-color: #1565C0 !important; padding: 3px 6px; border-radius: 4px;}
+
+            .row .col.s4 {width: 50%;}
+
+            .cyan {background-color: #01923d !important;}
+
+            .blue.darken-3 {background-color: #1565C0 !important; margin-right: 50px;}
+
+            .brand-logo > img {display: none;}
+
+            .text-small {font-size: 14px;}
+
+            .subview-left {width: 24%;}
+
+            .chart-box {display: block; margin: 15px auto 0; text-align: center; max-height: 94px; height: 94px;}
+
+            .code-block {width: 450px; height: 100px;}
+
+            ]]>
+
+        </styles>
+
+    </configuration>
+
+</extentreports>
