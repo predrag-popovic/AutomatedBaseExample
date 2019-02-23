@@ -261,6 +261,10 @@ public class BaseMethods {
         sendKeys(el, keys);
     }
 
+    /******************************************************************************
+                      METHODS FOR FIND ELEMENT WITHOUT ACTION
+     *****************************************************************************/
+
     /***
      * findElementById
      * @param id
@@ -274,11 +278,7 @@ public class BaseMethods {
             return null;
         }
     }
-
-    /******************************************************************************
-                      METHODS FOR FIND ELEMENT WITHOUT ACTION
-     *****************************************************************************/
-
+    
     /***
      * findElementByXPath
      * @param xPath
